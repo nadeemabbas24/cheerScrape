@@ -14,7 +14,8 @@ import puppeteer from 'puppeteer';
   // Wait for the page to load
   await page.waitForNavigation();
    // Select the "JavaScript" language filter
-   
+
+   await page.screenshot({path :'screenshot.png'});
      
   // Extract the developer information
   const developerInfo = await page.evaluate(() => {
